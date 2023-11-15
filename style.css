@@ -1,0 +1,600 @@
+/* Home page */
+body{
+	overflow-x: hidden; 
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* HOMEPAGE */
+#homepage{
+	z-index: 2;
+	overflow: hidden;
+}
+/* nav */
+
+header nav{
+	background-color: #CE93D8;
+}
+
+header nav ul{
+	background-image: url(img/navigation_1012x120.jpg);
+	overflow: hidden;
+	width: 1012px;
+}
+
+header nav ul li{
+	line-height: 120px;
+	font-family: 'JetBrains Mono', monospace;
+	font-weight: 500;
+	font-size: 22px;
+	margin: 0 10px 0 20px;
+}
+
+header nav ul li:first-child{
+	margin-left: auto;
+}
+
+header nav ul li a:link{
+	color: black;
+	text-decoration: none;
+}
+
+header nav ul li a:visited{
+	color: black;
+}
+
+header nav ul li a:hover{
+	color: #CE93D8;
+	cursor: pointer;
+	text-shadow: 1px 1px 2px black;
+}
+
+header nav ul li a:active{
+	position: relative;
+	top: 2px;
+}
+
+/* overall-info */
+
+#overall-info{
+	background: url(img/Home_photo.png) center center no-repeat;
+	width: 100%;
+	height: 620px;
+	background-attachment: fixed;
+	position: relative;
+}
+
+#overall-info-paragraphs{
+	padding: 10% 0 0 0;
+}
+
+#paragraph1, #paragraph2{
+	text-align: center;
+	font-size: 24px;
+}
+
+#paragraph2{
+	padding: 5% 3% 0 0;
+}
+
+#paragraph1 h1, #paragraph2 h1{
+	font-size: 60px;
+}
+
+/* footer */
+
+#links-footer-container{
+	position: absolute;
+	bottom: 0;
+	background: #999;
+	z-index: 4;
+}
+
+#links-footer{
+	padding: 5px 0 0 0;
+	height: 65px;
+}
+
+#links-footer ul{
+	padding: 0;
+}
+
+#links-footer ul li{
+	display: inline-block;
+}
+
+.footer-image{
+	height: 55px;
+	width: 55px;
+}
+
+/* EDUCATION AND EXPERIENCE */
+#education-experience{
+	background-color: #d9d9d9;
+	background-image: url(img/Education_experience.jpg);
+	background-repeat: no-repeat;
+	height: 767px;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+#timeline{
+	width: 700px;
+	height: 745px;
+	overflow: hidden;
+	margin: 3.5% auto 0 50%;
+	position: relative;
+	background: url('img/Small_dot.png') 3px top repeat-y;
+}
+
+ #dates{
+	width: 180px;
+	height: 500px;
+	overflow: hidden;
+	float: left;
+	padding-top: 20%;
+}
+
+#dates li{
+	list-style: none;
+	width: 300px;
+	height: 100px;
+	line-height: 100px;
+	font-size: 24px;
+	padding-left: 20px;
+	background: url('img/Big_dot.png')  left center no-repeat;
+}
+
+#dates a{
+	line-height: 38px;
+	padding-bottom: 10px;
+	color: #c6bc68;
+	text-decoration: none;
+}
+
+#dates a:hover{
+	color: #b6a50d;
+}
+
+#issues{
+	width: 500px;
+	height: 600px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 5%;
+}
+
+#issues li{
+	max-width: 400px;
+	height: 600px;
+	list-style: none;
+	text-align: center;
+	padding-top: 150px;
+}
+
+#issues li h1{
+	color: #b6a50d;
+	font-size: 40px;
+}
+
+#issues li p{
+	font-size: 18px;
+	margin: 50px 20px;
+	font-weight: normal;
+	line-height: 22px;
+	text-shadow: #000 1px 1px 2px;
+}
+
+#next, 
+#prev{
+	position: absolute;
+	left: 45%;
+	font-size: 70px;
+	width: 38px;
+	height: 22px;
+	background-position: 0 -44px;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+#next:hover,
+#prev:hover{
+	background-position: 0 0;
+}
+
+#next{
+	bottom: 5%;
+	background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png');
+}
+
+#prev{
+	top: 5%;
+	background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png');
+}
+
+/* CAROUSEL */
+
+#demo{
+	height: 767px;
+	background: #d9d9d9;
+	overflow: hidden;
+}
+
+.carousel-caption{
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* SKILLS */
+
+#skills{
+	display: inline-block;
+	background-color: #b2b2b2;
+	background-image: url('img/Skills_bg.png');
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 767px;
+	background-attachment: fixed;
+}
+
+#skills #skills-title h1{
+	background: url('img/Skills_header.png');
+	width: 885px;
+	height: 100px;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 30px;
+	line-height: 100px;
+	text-align: center;
+}
+
+#skills p{
+	display: inline-block;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 22px;
+	background: url(img/Cloud_skills.png) center center no-repeat;
+	width: 474px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	margin-bottom: 10px;
+}
+
+/* PERSONAL FEATURES */
+
+#personal-features{
+	display: inline-block;
+	background-color: #b2b2b2;
+	background-image: url('img/Personal_experience_bg.png');
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 767px;
+	background-attachment: fixed;
+}
+
+#personal-features #personal-features-title h1{
+	background: url('img/Personal_experience_header.png') no-repeat;
+	width: 885px;
+	height: 100px;
+	text-align: center;
+	font-family:  'JetBrains Mono', monospace;
+	font-size: 30px;
+	line-height: 100px;
+}
+
+#personal-features section p{
+	display: inline-block;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 22px;
+	background: url(img/Clound_personal_features.png) center center no-repeat;
+	width: 474px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	margin-bottom: 10px;
+}
+
+/* CONTACT PAGE */
+#contact-page{
+	font-family:  'JetBrains Mono', monospace;
+	overflow-x: hidden;
+}
+
+#contact-page #contact-form{
+	background: #8b8b8b;
+	height: 767px;
+}
+
+#contact-page #contact-details{
+	background: #757575;
+	position: relative;
+	height: 767px;
+}
+
+
+#contact-page h1{
+	color: #424242;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 174px;
+	margin-left: 68px;
+	margin-bottom: 70px;
+}
+
+#contact-page h2{
+	color: #ce93d8;
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+
+/* contact form */
+
+#contact-form form{
+	width: 60%;
+	margin: 0 auto;
+}
+
+#contact-form form input{
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 40px;
+	padding: 5px;
+}
+
+#contact-form form textarea{
+	width: 100%;
+	resize: none;
+	padding: 5px;
+}
+
+#contact-form form input[type="submit"]{
+	position: relative;
+	width: 50%;
+	background: #424242;
+	color: #ce93d8;
+	font-size: 36px;
+	height: 1.5em;
+	left: 65%;
+	top: 50px;
+	border: none;
+	box-shadow: 3px 3px 7px #111;
+}
+
+#contact-form form input[type="submit"]:hover{
+	cursor: pointer;
+	color: #ecd4f0;
+}
+
+#contact-form form input[type="submit"]:active{
+	top: 51px;
+}
+
+/* contact details */
+
+#contact-page #phones ul li{
+	display: block;
+	list-style: none;
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+#phones span{
+	margin-left: 10px;
+	cursor: pointer;
+	color: #ce93d8;
+}
+
+#phones #ua-hide-number,
+#phones #pl-hide-number {
+	margin-left: 0;
+	cursor: default;
+	color: black;
+}
+
+#contact-page #links ul li{
+	list-style: '-';
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+#links a{
+	text-decoration: none;
+	color: black;
+}
+
+#links a:visited{
+	color: black;
+}
+
+#links a:hover{
+	cursor: pointer;
+}
+
+#links a:not(:hover){
+	opacity: 0.6;
+}
+
+#contact-details #contact-home img{
+	position: absolute;
+	bottom: 70px;
+	left: 70px;
+}
+
+/* Media Queries */
+@media only screen and ( max-width: 1240px ){
+	header nav ul li{
+		font-size: 20px;
+	}
+	header nav ul li:first-child{
+		margin-left: 15%;
+	}
+	#paragraph1, #paragraph2{
+		font-size: 18px;
+	}
+	#paragraph1 h1, #paragraph2 h1{
+		font-size: 50px;
+	}
+	#timeline{
+		margin-left: 45%;
+	}
+	#issues{
+		width: 500px;
+		right: 12%;
+	}
+		#issues li p{
+		font-size: 16px;
+	}
+}
+
+@media only screen and ( max-width: 1120px ){
+	header nav ul li{
+		letter-spacing: -2px;
+		margin-right: 6px;
+	}
+}
+
+@media only screen and ( max-width: 992px ){
+	header nav ul{
+	background: none;
+	}
+	header nav ul li a:hover{
+	color: #fff59d;
+	}
+	header nav ul li:first-child{
+		position: relative;
+		left: -130px;
+	}
+	header nav ul li{
+		line-height: 35px;
+	}
+	#overall-info{
+		background: url(img/Home_photo_2.png) center bottom no-repeat;
+		height: 550px;
+		width: auto;
+		margin: 5% 0 0 0;
+		overflow: hidden;
+	}
+	#paragraph1 h1, #paragraph2 h1{
+		font-size: 40px;
+	}
+	#overall-info-paragraphs{
+		padding: 0;
+	}
+	#paragraph2{
+		padding: 0 3% 0 0;
+	}
+	#skills{
+		background: #b2b2b2;
+	}
+	#personal-features{
+		background: #b2b2b2;
+	}
+}
+
+@media only screen and ( max-width: 700px ){
+	#demo{
+		height: 550px;
+	}
+}
+
+@media only screen and ( max-width: 576px ){
+	.carousel-inner{
+		padding-bottom: 500px;
+		position: relative;
+	}
+	.carousel-caption{
+		position: absolute;
+		top: 200px;
+		background: none;
+	}
+	.carousel-item:first-child{
+		margin-top: 20%;
+	}
+	#skills section p{
+		background: url(img/Cloud_small_skills.png) center center no-repeat;
+	}
+	#personal-features section p{
+		background: url(img/Cloud_small_pf.png) center center no-repeat;
+	}
+	#contact-details h1{
+		margin-bottom: 35px;
+	}
+	#contact-page h2{
+		font-size: 35px;
+		margin: 0 0 25px 10px;
+	}
+	#contact-page #phones ul li,
+	#contact-page #links ul li{
+		font-size: 25px;
+	}
+	#contact-form form input[type="submit"]{
+		letter-spacing: -2px;
+	}
+	#contact-details #contact-home img{
+		left: 200px;
+	}
+}
+
+@media only screen and ( max-width: 360px ){
+	#contact-form form{
+		width: 80%;
+	}
+}
+
+@media only screen and ( max-width: 280px ){
+	#links-footer{
+		padding: 10px 0 0 0;
+	}
+	.footer-image{
+		height: 40px;
+		width: 40px;
+	}
+	#paragraph1, #paragraph2{
+		font-size: 16px;
+		letter-spacing: -0.75px;
+	}
+	#paragraph1 h1, #paragraph2 h1{
+		font-size: 34px;
+	}
+	#demo{
+		height: 400px;
+	}
+	.carousel-caption{
+		top: 150px;
+		font-size: 13px;
+	}
+	#skills #skills-title h1,
+	#personal-features #personal-features-title h1{
+		font-size: 26px;
+		letter-spacing: -2px;
+	}
+	#skills section p,
+	#personal-features section p{
+		font-size: 18px;
+	}
+	#contact-page h1{
+		font-size: 40px;
+		line-height: 100px;
+		margin-bottom: 50px;
+	}
+	#contact-page h1 span{
+		margin: 0 0 0 80px;
+	}
+	#contact-form form input[type="submit"]{
+		font-size: 30px;
+		left: 50%;
+		top: 30px;
+	}
+	#contact-page #phones ul li{
+		font-size: 26px;
+		letter-spacing: -2px;
+	}
+	#contact-details #contact-home img{
+		bottom: 50px;
+		left: 100px;
+	}
+}
